@@ -15,6 +15,3 @@ EXPOSE 8080 8081
 
 # Start mitmproxy in transparent mode
 ENTRYPOINT ["mitmdump", "--mode", "regular", "-s", "/app/mitm_script.py"]
-
-# You can also use mitmproxy directly for a web interface:
-# ENTRYPOINT ["mitmproxy", "--mode", "regular", "-s", "/app/mitm_script.py"]
